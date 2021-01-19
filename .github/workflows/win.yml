@@ -30,10 +30,6 @@ jobs:
         with:
           node-version: '10.x'
 
-      - name: Setup MSBuild.exe
-        if: matrix.os == 'windows-latest'
-        uses: warrenbuckley/Setup-MSBuild@v1
-
       - name: Dependencies
         run: yarn
 
