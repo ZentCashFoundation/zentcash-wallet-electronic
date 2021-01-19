@@ -10,16 +10,15 @@
     "start": "electron .",
     "debug": "electron . debug",
     "dev": "electron . dev",
-    "dist-win": "./node_modules/.bin/electron-builder --x64 --win -c.extraResources=./bin/win/Zent-service.exe",
-    "dist-lin": "./node_modules/.bin/electron-builder --x64 --linux -c.extraResources=./bin/lin/Zent-service",
-    "dist-mac": "./node_modules/.bin/electron-builder --x64 --mac -c.extraResources=./bin/osx/Zent-service"
+    "dist-win": "./node_modules/.bin/electron-builder --publish=never --x64 --win -c.extraResources=./bin/win/Zent-service.exe",
+    "dist-lin": "./node_modules/.bin/electron-builder --publish=never --x64 --linux -c.extraResources=./bin/lin/Zent-service",
+    "dist-mac": "./node_modules/.bin/electron-builder --publish=never --x64 --mac -c.extraResources=./bin/osx/Zent-service"
   },
   "keywords": [],
   "author": "ZentCash Developers",
   "license": "ISC",
   "devDependencies": {
-    "devtron": "^1.4.0",
-    "electron": "^4.1.4",
+    "electron": "^4.2.12",
     "electron-builder": "^20.44.4",
     "jshint": "^2.10.2"
   },
