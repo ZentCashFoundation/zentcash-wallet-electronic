@@ -2,7 +2,7 @@
   "name": "zentcashelectronicwallet",
   "productName": "ZentCash-Electronic-Wallet",
   "description": "Zent Cash Electronic Wallet",
-  "version": "v0.3.13",
+  "version": "v0.3.14",
   "homepage": "https://www.zent.cash",
   "repository": "https://www.zent.cash",
   "main": "main.js",
