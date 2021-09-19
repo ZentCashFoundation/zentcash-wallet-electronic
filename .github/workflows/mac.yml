@@ -27,16 +27,16 @@ jobs:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
-          node-version: '10.x'
+          node-version: '14.x'
 
       - name: Dependencies
-        run: yarn
+        run: npm install
 
       - name: Build for MacOS
         if: matrix.target == 'MacOS'
         run: |
           chmod +x ./bin/osx/Zent-service
-          yarn dist-mac
+          npm run dist-mac
           
       - name: Prepare to Deploy
         id: before_deploy
