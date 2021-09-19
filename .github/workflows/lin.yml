@@ -30,13 +30,12 @@ jobs:
           node-version: '14.x'
 
       - name: Dependencies
-        run: npm
+        run: npm install
 
       - name: Build for Linux
         if: matrix.target == 'Linux'
         run: |
           chmod +x ./bin/lin/Zent-service
-          npm install
           npm run dist-lin
           
       - name: Prepare to Deploy
