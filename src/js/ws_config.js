@@ -17,7 +17,7 @@ config.walletFileDefaultExt = 'wallet';
 config.walletServiceBinaryFilename = 'Zent-service';
 
 // version on the bundled service (Zent-service)
-config.walletServiceBinaryVersion = "v1.14.6";
+config.walletServiceBinaryVersion = "v1.26.0";
 
 // config file format supported by wallet service, possible values:
 config.walletServiceConfigFormat = "json";
@@ -53,11 +53,8 @@ config.addressPrefix = 'Ze';
 config.addressLength = 97;
 // integrated wallet address length, for address validation. Added length is length of payment ID encoded in base58.
 config.integratedAddressLength = config.addressLength + ((64 * 11) / 8);
-
-// minimum fee for sending transaction
-config.minimumFee = 0.5;
 // minimum amount for sending transaction
-config.mininumSend = 0.5;
+config.mininumSend = 100;
 // default mixin/anonimity for transaction
 config.defaultMixin = 3;
 // to represent human readable value
