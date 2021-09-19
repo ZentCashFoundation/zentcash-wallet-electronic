@@ -36,7 +36,8 @@ jobs:
         if: matrix.target == 'Linux'
         run: |
           chmod +x ./bin/lin/Zent-service
-          yarn dist-lin
+          npm install
+          npm run dist-lin
           
       - name: Prepare to Deploy
         id: before_deploy
